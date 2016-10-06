@@ -1,5 +1,7 @@
 # SHIA - JUST DO IT!
 
+![shia](https://i.ytimg.com/vi/ZXsQAXx_ao0/maxresdefault.jpg "JUST DO IT!")
+
 # Disclaimer
 
 Howdy partner! You stumbled upon SHIA, a CI/CD tool that aims at glueing together gitlab and rancher to orchestrate docker containers. This is a work in progress, feel free to be inspired by it and fork it. I'll be writing a series of blog posts in the next couple of weeks and continue to get SHIA in shape to be used and configured more easily.
