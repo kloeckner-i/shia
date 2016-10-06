@@ -1,12 +1,16 @@
-# Shia
+# SHIA - JUST DO IT!
 
-# Testing - recording the vcr cassettes
+# Disclaimer
 
-run:
+Howdy partner! You stumbled upon SHIA, a CI/CD tool that aims at glueing together gitlab and rancher to orchestrate docker containers. This is a work in progress, feel free to be inspired by it and fork it. I'll be writing a series of blog posts in the next couple of weeks and continue to get SHIA in shape to be used and configured more easily.
 
-```bash
-./vcr_record.rb
-```
+If you stumble upon any challenges, shoot me a mail or open an issue.
+
+# Introduction
+
+For an introduction to SHIA, check out my slides:
+
+https://docs.google.com/presentation/d/1FdB6myROKGYwkBoddskk7GQKblQBxPrTfBy3hA5RfiA/edit?usp=sharing
 
 # Configuration
 
@@ -24,6 +28,13 @@ group: testgroup
 project: testproject
 ```
 
+### config/
+Take a look inside these files, and search for a TODO, :)
+* docker_registry.yml
+* git_config.yml
+* google_config.yml
+* stacks.yml
+
 ## gitlab-runner configuration
 We need to setup our gitlab-runners:
 * create a gitlab user that has a deploy key
@@ -37,6 +48,17 @@ We need to setup our gitlab-runners:
 RANCHER_URL: 'https://rancher.example.com/v1'
 RANCHER_ACCESS_KEY: 'secret'
 RANCHER_SECRET_KEY: 'secret+1'
+```
+
+### GCE Rancher server instance
+It's important, that you set the 'Cloud API access scope' of the rancher-server instance for 'Compute' to 'Read Write'. You'll not be able to add hosts with docker-machine if you forget to do it.
+
+# Testing - recording the vcr cassettes
+
+run:
+
+```bash
+./vcr_record.rb
 ```
 
 # Usage in gitlab-ci.yml
