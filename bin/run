@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+ENV['SECRETS_FILE'] = 'keys/secrets.yml'
+require 'bundler/setup'
+require 'pry'
+require 'shia'
+Shia.run(ARGV)

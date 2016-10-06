@@ -1,0 +1,34 @@
+cache:
+  paths:
+  - .bundler/
+
+stages:
+  - tests
+  - publish
+
+rubocop:
+  stage: tests
+  before_script:
+    - gem install rubocop
+  script:
+    - rubocop
+
+rspec:
+  stage: tests
+  before_script:
+    - ruby -v
+    - which ruby
+    - gem install bundler --no-ri --no-rdoc
+    - bundle install --jobs $(nproc)  "${FLAGS[@]}" --path=.bundler
+  script:
+    - bundle exec rspec
+
+docker:
+  stage: publish
+  image: docker:latest
+  script:
+    - docker build -t registry.kci.rocks/deployment/shia:latest .
+    - docker run registry.kci.rocks/deployment/shia:latest
+    - docker push registry.kci.rocks/deployment/shia:latest
+  only:
+    - master

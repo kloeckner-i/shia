@@ -1,0 +1,13 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/keys/
+/shia/
+.DS_Store
+spec/cassettes/Shia_Ranch_Cowboy/live_test/
+spec/files/rancher/data

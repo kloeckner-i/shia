@@ -1,0 +1,8 @@
+version: '2'
+services:
+  server:
+    image: rancher/server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./spec/files/rancher/data:/var/lib/mysql

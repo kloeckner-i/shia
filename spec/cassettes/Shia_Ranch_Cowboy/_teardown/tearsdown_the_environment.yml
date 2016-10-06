@@ -1,0 +1,820 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+      Content-Length:
+      - '1994'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"project","links":{"self":"http://localhost:8080/v1/projects"},"createTypes":{},"actions":{},"data":[{"id":"1a5","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a5","agents":"http://localhost:8080/v1/projects/1a5/agents","auditLogs":"http://localhost:8080/v1/projects/1a5/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a5/backuptargets","backups":"http://localhost:8080/v1/projects/1a5/backups","certificates":"http://localhost:8080/v1/projects/1a5/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a5/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a5/containerevents","credentials":"http://localhost:8080/v1/projects/1a5/credentials","environments":"http://localhost:8080/v1/projects/1a5/environments","externalEvents":"http://localhost:8080/v1/projects/1a5/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a5/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a5/hosts","images":"http://localhost:8080/v1/projects/1a5/images","instanceLinks":"http://localhost:8080/v1/projects/1a5/instancelinks","instances":"http://localhost:8080/v1/projects/1a5/instances","ipAddresses":"http://localhost:8080/v1/projects/1a5/ipaddresses","labels":"http://localhost:8080/v1/projects/1a5/labels","mounts":"http://localhost:8080/v1/projects/1a5/mounts","networks":"http://localhost:8080/v1/projects/1a5/networks","physicalHosts":"http://localhost:8080/v1/projects/1a5/physicalhosts","ports":"http://localhost:8080/v1/projects/1a5/ports","projectMembers":"http://localhost:8080/v1/projects/1a5/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a5/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a5/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a5/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a5/services","snapshots":"http://localhost:8080/v1/projects/1a5/snapshots","storagePools":"http://localhost:8080/v1/projects/1a5/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a5/userpreferences","volumes":"http://localhost:8080/v1/projects/1a5/volumes","accounts":"http://localhost:8080/v1/projects/1a5/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a5/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a5/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a5/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a5/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a5/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a5/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a5/composeservices","configItems":"http://localhost:8080/v1/projects/1a5/configitems","containerExecs":"http://localhost:8080/v1/projects/1a5/containerexecs","containers":"http://localhost:8080/v1/projects/1a5/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a5/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a5/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a5/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a5/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a5/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a5/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a5/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a5/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a5/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a5/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a5/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a5/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a5/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a5/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a5/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a5/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a5/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a5/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a5/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a5/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a5/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a5/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a5/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a5/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a5/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a5/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a5/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a5/machinedrivers","machines":"http://localhost:8080/v1/projects/1a5/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a5/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a5/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a5/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a5/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a5/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a5/processinstances","projects":"http://localhost:8080/v1/projects/1a5/projects","pullTasks":"http://localhost:8080/v1/projects/1a5/pulltasks","register":"http://localhost:8080/v1/projects/1a5/register","registrationTokens":"http://localhost:8080/v1/projects/1a5/registrationtokens","registries":"http://localhost:8080/v1/projects/1a5/registries","registryCredentials":"http://localhost:8080/v1/projects/1a5/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a5/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a5/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a5/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a5/serviceproxies","settings":"http://localhost:8080/v1/projects/1a5/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a5/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a5/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a5/taskinstances","tasks":"http://localhost:8080/v1/projects/1a5/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a5/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a5/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a5/projects/1a5/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a5/?action=update","deactivate":"http://localhost:8080/v1/projects/1a5/?action=deactivate","setmembers":"http://localhost:8080/v1/projects/1a5/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a5/?action=delete"},"name":"production","state":"active","allowSystemRole":false,"created":"2016-08-23T12:44:55Z","createdTS":1471956295000,"data":{"fields":{"servicesPortRange":{"startPort":49153,"endPort":65535},"defaultNetworkId":5}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"adminProject","virtualMachine":false},{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/?action=update","deactivate":"http://localhost:8080/v1/projects/1a7/?action=deactivate","setmembers":"http://localhost:8080/v1/projects/1a7/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a7/?action=delete"},"name":"api-test","state":"active","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}],"sortLinks":{},"pagination":null,"sort":null,"filters":{},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+      Content-Length:
+      - '1491'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/?action=update","deactivate":"http://localhost:8080/v1/projects/1a7/?action=deactivate","setmembers":"http://localhost:8080/v1/projects/1a7/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a7/?action=delete"},"name":"api-test","state":"active","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/environments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '392'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"environment","links":{"self":"http://localhost:8080/v1/projects/1a7/environments"},"createTypes":{"composeProject":"http://localhost:8080/v1/projects/1a7/composeprojects","environment":"http://localhost:8080/v1/projects/1a7/environments"},"actions":{},"data":[],"sortLinks":{"accountId":"http://localhost:8080/v1/projects/1a7/environments?sort=accountId","created":"http://localhost:8080/v1/projects/1a7/environments?sort=created","description":"http://localhost:8080/v1/projects/1a7/environments?sort=description","externalId":"http://localhost:8080/v1/projects/1a7/environments?sort=externalId","healthState":"http://localhost:8080/v1/projects/1a7/environments?sort=healthState","id":"http://localhost:8080/v1/projects/1a7/environments?sort=id","kind":"http://localhost:8080/v1/projects/1a7/environments?sort=kind","name":"http://localhost:8080/v1/projects/1a7/environments?sort=name","removeTime":"http://localhost:8080/v1/projects/1a7/environments?sort=removeTime","removed":"http://localhost:8080/v1/projects/1a7/environments?sort=removed","state":"http://localhost:8080/v1/projects/1a7/environments?sort=state","uuid":"http://localhost:8080/v1/projects/1a7/environments?sort=uuid"},"pagination":{"first":null,"previous":null,"next":null,"limit":100,"total":null,"partial":false},"sort":null,"filters":{"accountId":null,"created":null,"description":null,"externalId":null,"healthState":null,"id":null,"kind":null,"name":null,"removeTime":null,"removed":null,"state":null,"uuid":null},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/machines
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '381'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"machine","links":{"self":"http://localhost:8080/v1/projects/1a7/machines"},"createTypes":{"machine":"http://localhost:8080/v1/projects/1a7/machines"},"actions":{},"data":[],"sortLinks":{"accountId":"http://localhost:8080/v1/projects/1a7/machines?sort=accountId","agentId":"http://localhost:8080/v1/projects/1a7/machines?sort=agentId","created":"http://localhost:8080/v1/projects/1a7/machines?sort=created","description":"http://localhost:8080/v1/projects/1a7/machines?sort=description","driver":"http://localhost:8080/v1/projects/1a7/machines?sort=driver","externalId":"http://localhost:8080/v1/projects/1a7/machines?sort=externalId","id":"http://localhost:8080/v1/projects/1a7/machines?sort=id","kind":"http://localhost:8080/v1/projects/1a7/machines?sort=kind","name":"http://localhost:8080/v1/projects/1a7/machines?sort=name","removeTime":"http://localhost:8080/v1/projects/1a7/machines?sort=removeTime","removed":"http://localhost:8080/v1/projects/1a7/machines?sort=removed","state":"http://localhost:8080/v1/projects/1a7/machines?sort=state","uuid":"http://localhost:8080/v1/projects/1a7/machines?sort=uuid"},"pagination":{"first":null,"previous":null,"next":null,"limit":100,"total":null,"partial":false},"sort":null,"filters":{"accountId":null,"agentId":null,"created":null,"description":null,"driver":null,"externalId":null,"id":null,"kind":null,"name":null,"removeTime":null,"removed":null,"state":null,"uuid":null},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '719'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries"},"createTypes":{},"actions":{},"data":[{"id":"1sp1","type":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries/1sp1","account":"http://localhost:8080/v1/projects/1a7/registries/1sp1/account","credentials":"http://localhost:8080/v1/projects/1a7/registries/1sp1/credentials","hosts":"http://localhost:8080/v1/projects/1a7/registries/1sp1/hosts","images":"http://localhost:8080/v1/projects/1a7/registries/1sp1/images","volumes":"http://localhost:8080/v1/projects/1a7/registries/1sp1/volumes"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=update","deactivate":"http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=deactivate"},"name":"registry.example.com","state":"active","accountId":"1a7","blockDevicePath":null,"created":"2016-08-23T12:45:14Z","createdTS":1471956314000,"description":null,"driverName":null,"externalId":null,"kind":"registry","removed":null,"serverAddress":"registry.example.com","transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"43d7b939-44d1-43e1-afec-f037a48c3a2a","volumeAccessMode":null,"volumeCapabilities":null}],"sortLinks":{"accountId":"http://localhost:8080/v1/projects/1a7/registries?sort=accountId","agentId":"http://localhost:8080/v1/projects/1a7/registries?sort=agentId","created":"http://localhost:8080/v1/projects/1a7/registries?sort=created","description":"http://localhost:8080/v1/projects/1a7/registries?sort=description","driverName":"http://localhost:8080/v1/projects/1a7/registries?sort=driverName","external":"http://localhost:8080/v1/projects/1a7/registries?sort=external","externalId":"http://localhost:8080/v1/projects/1a7/registries?sort=externalId","id":"http://localhost:8080/v1/projects/1a7/registries?sort=id","kind":"http://localhost:8080/v1/projects/1a7/registries?sort=kind","name":"http://localhost:8080/v1/projects/1a7/registries?sort=name","physicalTotalSizeMb":"http://localhost:8080/v1/projects/1a7/registries?sort=physicalTotalSizeMb","removeTime":"http://localhost:8080/v1/projects/1a7/registries?sort=removeTime","removed":"http://localhost:8080/v1/projects/1a7/registries?sort=removed","state":"http://localhost:8080/v1/projects/1a7/registries?sort=state","uuid":"http://localhost:8080/v1/projects/1a7/registries?sort=uuid","virtualTotalSizeMb":"http://localhost:8080/v1/projects/1a7/registries?sort=virtualTotalSizeMb","volumeAccessMode":"http://localhost:8080/v1/projects/1a7/registries?sort=volumeAccessMode","zoneId":"http://localhost:8080/v1/projects/1a7/registries?sort=zoneId"},"pagination":{"first":null,"previous":null,"next":null,"limit":100,"total":null,"partial":false},"sort":null,"filters":{"accountId":null,"agentId":null,"created":null,"description":null,"driverName":null,"external":null,"externalId":null,"id":null,"kind":null,"name":null,"physicalTotalSizeMb":null,"removeTime":null,"removed":null,"state":null,"uuid":null,"virtualTotalSizeMb":null,"volumeAccessMode":null,"zoneId":null},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=deactivate
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Length:
+      - '949'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+    body:
+      encoding: UTF-8
+      string: '{"id":"1sp1","type":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries/1sp1","account":"http://localhost:8080/v1/projects/1a7/registries/1sp1/account","credentials":"http://localhost:8080/v1/projects/1a7/registries/1sp1/credentials","hosts":"http://localhost:8080/v1/projects/1a7/registries/1sp1/hosts","images":"http://localhost:8080/v1/projects/1a7/registries/1sp1/images","volumes":"http://localhost:8080/v1/projects/1a7/registries/1sp1/volumes"},"actions":{},"name":"registry.example.com","state":"deactivating","accountId":"1a7","blockDevicePath":null,"created":"2016-08-23T12:45:14Z","createdTS":1471956314000,"description":null,"driverName":null,"externalId":null,"kind":"registry","removed":null,"serverAddress":"registry.example.com","transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"43d7b939-44d1-43e1-afec-f037a48c3a2a","volumeAccessMode":null,"volumeCapabilities":null}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registries/1sp1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '397'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1sp1","type":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries/1sp1","account":"http://localhost:8080/v1/projects/1a7/registries/1sp1/account","credentials":"http://localhost:8080/v1/projects/1a7/registries/1sp1/credentials","hosts":"http://localhost:8080/v1/projects/1a7/registries/1sp1/hosts","images":"http://localhost:8080/v1/projects/1a7/registries/1sp1/images","volumes":"http://localhost:8080/v1/projects/1a7/registries/1sp1/volumes"},"actions":{},"name":"registry.example.com","state":"deactivating","accountId":"1a7","blockDevicePath":null,"created":"2016-08-23T12:45:14Z","createdTS":1471956314000,"description":null,"driverName":null,"externalId":null,"kind":"registry","removed":null,"serverAddress":"registry.example.com","transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"43d7b939-44d1-43e1-afec-f037a48c3a2a","volumeAccessMode":null,"volumeCapabilities":null}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:20 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registries/1sp1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:25 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '420'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1sp1","type":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries/1sp1","account":"http://localhost:8080/v1/projects/1a7/registries/1sp1/account","credentials":"http://localhost:8080/v1/projects/1a7/registries/1sp1/credentials","hosts":"http://localhost:8080/v1/projects/1a7/registries/1sp1/hosts","images":"http://localhost:8080/v1/projects/1a7/registries/1sp1/images","volumes":"http://localhost:8080/v1/projects/1a7/registries/1sp1/volumes"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=update","activate":"http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=activate","remove":"http://localhost:8080/v1/projects/1a7/registries/1sp1/?action=remove"},"name":"registry.example.com","state":"inactive","accountId":"1a7","blockDevicePath":null,"created":"2016-08-23T12:45:14Z","createdTS":1471956314000,"description":null,"driverName":null,"externalId":null,"kind":"registry","removed":null,"serverAddress":"registry.example.com","transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"43d7b939-44d1-43e1-afec-f037a48c3a2a","volumeAccessMode":null,"volumeCapabilities":null}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:25 GMT
+- request:
+    method: delete
+    uri: http://localhost:8080/v1/projects/1a7/registries/1sp1
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '945'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:25 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+    body:
+      encoding: UTF-8
+      string: '{"id":"1sp1","type":"registry","links":{"self":"http://localhost:8080/v1/projects/1a7/registries/1sp1","account":"http://localhost:8080/v1/projects/1a7/registries/1sp1/account","credentials":"http://localhost:8080/v1/projects/1a7/registries/1sp1/credentials","hosts":"http://localhost:8080/v1/projects/1a7/registries/1sp1/hosts","images":"http://localhost:8080/v1/projects/1a7/registries/1sp1/images","volumes":"http://localhost:8080/v1/projects/1a7/registries/1sp1/volumes"},"actions":{},"name":"registry.example.com","state":"removing","accountId":"1a7","blockDevicePath":null,"created":"2016-08-23T12:45:14Z","createdTS":1471956314000,"description":null,"driverName":null,"externalId":null,"kind":"registry","removed":null,"serverAddress":"registry.example.com","transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"43d7b939-44d1-43e1-afec-f037a48c3a2a","volumeAccessMode":null,"volumeCapabilities":null}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:25 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registrycredentials
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:25 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '631'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials"},"createTypes":{},"actions":{},"data":[{"id":"1c2","type":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2","account":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/account","images":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/images","instances":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/instances","registry":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/registry"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=update","deactivate":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=deactivate"},"name":"user","state":"active","accountId":"1a7","created":"2016-08-23T12:45:15Z","createdTS":1471956315000,"description":null,"email":"dev@example.com","kind":"registryCredential","publicValue":"user","registryId":"1sp1","removed":null,"secretValue":null,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"9d097858-3790-478b-b3ac-772b519a708b"}],"sortLinks":{"accountId":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=accountId","created":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=created","description":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=description","id":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=id","kind":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=kind","name":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=name","publicValue":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=publicValue","registryId":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=registryId","removeTime":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=removeTime","removed":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=removed","secretValue":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=secretValue","state":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=state","uuid":"http://localhost:8080/v1/projects/1a7/registrycredentials?sort=uuid"},"pagination":{"first":null,"previous":null,"next":null,"limit":100,"total":null,"partial":false},"sort":null,"filters":{"accountId":null,"created":null,"description":null,"id":null,"kind":null,"name":null,"publicValue":null,"registryId":null,"removeTime":null,"removed":null,"secretValue":null,"state":null,"uuid":null},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:25 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=deactivate
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Length:
+      - '866'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:25 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+    body:
+      encoding: UTF-8
+      string: '{"id":"1c2","type":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2","account":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/account","images":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/images","instances":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/instances","registry":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/registry"},"actions":{},"name":"user","state":"deactivating","accountId":"1a7","created":"2016-08-23T12:45:15Z","createdTS":1471956315000,"description":null,"email":"dev@example.com","kind":"registryCredential","publicValue":"user","registryId":"1sp1","removed":null,"secretValue":"password","transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"9d097858-3790-478b-b3ac-772b519a708b"}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:25 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registrycredentials/1c2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:25 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '370'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1c2","type":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2","account":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/account","images":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/images","instances":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/instances","registry":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/registry"},"actions":{},"name":"user","state":"deactivating","accountId":"1a7","created":"2016-08-23T12:45:15Z","createdTS":1471956315000,"description":null,"email":"dev@example.com","kind":"registryCredential","publicValue":"user","registryId":"1sp1","removed":null,"secretValue":null,"transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"9d097858-3790-478b-b3ac-772b519a708b"}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:25 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7/registrycredentials/1c2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+      Content-Length:
+      - '386'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1c2","type":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2","account":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/account","images":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/images","instances":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/instances","registry":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/registry"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=update","activate":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=activate","remove":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/?action=remove"},"name":"user","state":"inactive","accountId":"1a7","created":"2016-08-23T12:45:15Z","createdTS":1471956315000,"description":null,"email":"dev@example.com","kind":"registryCredential","publicValue":"user","registryId":"1sp1","removed":null,"secretValue":null,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"9d097858-3790-478b-b3ac-772b519a708b"}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:26 GMT
+- request:
+    method: delete
+    uri: http://localhost:8080/v1/projects/1a7/registrycredentials/1c2
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '856'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a7
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/projects/1a7/schemas
+    body:
+      encoding: UTF-8
+      string: '{"id":"1c2","type":"registryCredential","links":{"self":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2","account":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/account","images":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/images","instances":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/instances","registry":"http://localhost:8080/v1/projects/1a7/registrycredentials/1c2/registry"},"actions":{},"name":"user","state":"removing","accountId":"1a7","created":"2016-08-23T12:45:15Z","createdTS":1471956315000,"description":null,"email":"dev@example.com","kind":"registryCredential","publicValue":"user","registryId":"1sp1","removed":null,"secretValue":null,"transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"9d097858-3790-478b-b3ac-772b519a708b"}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:26 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+      Content-Length:
+      - '1994'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"collection","resourceType":"project","links":{"self":"http://localhost:8080/v1/projects"},"createTypes":{},"actions":{},"data":[{"id":"1a5","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a5","agents":"http://localhost:8080/v1/projects/1a5/agents","auditLogs":"http://localhost:8080/v1/projects/1a5/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a5/backuptargets","backups":"http://localhost:8080/v1/projects/1a5/backups","certificates":"http://localhost:8080/v1/projects/1a5/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a5/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a5/containerevents","credentials":"http://localhost:8080/v1/projects/1a5/credentials","environments":"http://localhost:8080/v1/projects/1a5/environments","externalEvents":"http://localhost:8080/v1/projects/1a5/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a5/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a5/hosts","images":"http://localhost:8080/v1/projects/1a5/images","instanceLinks":"http://localhost:8080/v1/projects/1a5/instancelinks","instances":"http://localhost:8080/v1/projects/1a5/instances","ipAddresses":"http://localhost:8080/v1/projects/1a5/ipaddresses","labels":"http://localhost:8080/v1/projects/1a5/labels","mounts":"http://localhost:8080/v1/projects/1a5/mounts","networks":"http://localhost:8080/v1/projects/1a5/networks","physicalHosts":"http://localhost:8080/v1/projects/1a5/physicalhosts","ports":"http://localhost:8080/v1/projects/1a5/ports","projectMembers":"http://localhost:8080/v1/projects/1a5/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a5/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a5/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a5/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a5/services","snapshots":"http://localhost:8080/v1/projects/1a5/snapshots","storagePools":"http://localhost:8080/v1/projects/1a5/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a5/userpreferences","volumes":"http://localhost:8080/v1/projects/1a5/volumes","accounts":"http://localhost:8080/v1/projects/1a5/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a5/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a5/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a5/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a5/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a5/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a5/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a5/composeservices","configItems":"http://localhost:8080/v1/projects/1a5/configitems","containerExecs":"http://localhost:8080/v1/projects/1a5/containerexecs","containers":"http://localhost:8080/v1/projects/1a5/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a5/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a5/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a5/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a5/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a5/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a5/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a5/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a5/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a5/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a5/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a5/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a5/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a5/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a5/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a5/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a5/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a5/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a5/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a5/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a5/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a5/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a5/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a5/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a5/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a5/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a5/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a5/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a5/machinedrivers","machines":"http://localhost:8080/v1/projects/1a5/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a5/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a5/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a5/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a5/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a5/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a5/processinstances","projects":"http://localhost:8080/v1/projects/1a5/projects","pullTasks":"http://localhost:8080/v1/projects/1a5/pulltasks","register":"http://localhost:8080/v1/projects/1a5/register","registrationTokens":"http://localhost:8080/v1/projects/1a5/registrationtokens","registries":"http://localhost:8080/v1/projects/1a5/registries","registryCredentials":"http://localhost:8080/v1/projects/1a5/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a5/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a5/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a5/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a5/serviceproxies","settings":"http://localhost:8080/v1/projects/1a5/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a5/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a5/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a5/taskinstances","tasks":"http://localhost:8080/v1/projects/1a5/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a5/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a5/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a5/projects/1a5/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a5/?action=update","deactivate":"http://localhost:8080/v1/projects/1a5/?action=deactivate","setmembers":"http://localhost:8080/v1/projects/1a5/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a5/?action=delete"},"name":"production","state":"active","allowSystemRole":false,"created":"2016-08-23T12:44:55Z","createdTS":1471956295000,"data":{"fields":{"servicesPortRange":{"startPort":49153,"endPort":65535},"defaultNetworkId":5}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"adminProject","virtualMachine":false},{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/?action=update","deactivate":"http://localhost:8080/v1/projects/1a7/?action=deactivate","setmembers":"http://localhost:8080/v1/projects/1a7/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a7/?action=delete"},"name":"api-test","state":"active","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}],"sortLinks":{},"pagination":null,"sort":null,"filters":{},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:26 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/v1/projects/1a7/?action=deactivate
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '7516'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+    body:
+      encoding: UTF-8
+      string: '{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{},"name":"api-test","state":"deactivating","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"yes","transitioningMessage":"In
+        Progress","transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:26 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/v1/projects/1a7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+      Content-Length:
+      - '1495'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{"update":"http://localhost:8080/v1/projects/1a7/?action=update","activate":"http://localhost:8080/v1/projects/1a7/?action=activate","remove":"http://localhost:8080/v1/projects/1a7/?action=remove","setmembers":"http://localhost:8080/v1/projects/1a7/?action=setmembers","delete":"http://localhost:8080/v1/projects/1a7/?action=delete"},"name":"api-test","state":"inactive","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":null,"removed":null,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:26 GMT
+- request:
+    method: delete
+    uri: http://localhost:8080/v1/projects/1a7
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - Basic Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '7813'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Aug 2016 12:45:26 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Server:
+      - Jetty(9.2.11.v20150529)
+      Set-Cookie:
+      - PL=rancher;Path=/
+      X-Api-Account-Id:
+      - 1a1
+      X-Api-Client-Ip:
+      - 172.23.0.1
+      X-Api-Schemas:
+      - http://localhost:8080/v1/schemas
+    body:
+      encoding: UTF-8
+      string: '{"type":"collection","resourceType":"project","links":{"self":"http://localhost:8080/v1/projects/1a7"},"createTypes":{},"actions":{},"data":[{"id":"1a7","type":"project","links":{"self":"http://localhost:8080/v1/projects/1a7","agents":"http://localhost:8080/v1/projects/1a7/agents","auditLogs":"http://localhost:8080/v1/projects/1a7/auditlogs","backupTargets":"http://localhost:8080/v1/projects/1a7/backuptargets","backups":"http://localhost:8080/v1/projects/1a7/backups","certificates":"http://localhost:8080/v1/projects/1a7/certificates","configItemStatuses":"http://localhost:8080/v1/projects/1a7/configitemstatuses","containerEvents":"http://localhost:8080/v1/projects/1a7/containerevents","credentials":"http://localhost:8080/v1/projects/1a7/credentials","environments":"http://localhost:8080/v1/projects/1a7/environments","externalEvents":"http://localhost:8080/v1/projects/1a7/externalevents","healthcheckInstanceHostMaps":"http://localhost:8080/v1/projects/1a7/healthcheckinstancehostmaps","hosts":"http://localhost:8080/v1/projects/1a7/hosts","images":"http://localhost:8080/v1/projects/1a7/images","instanceLinks":"http://localhost:8080/v1/projects/1a7/instancelinks","instances":"http://localhost:8080/v1/projects/1a7/instances","ipAddresses":"http://localhost:8080/v1/projects/1a7/ipaddresses","labels":"http://localhost:8080/v1/projects/1a7/labels","mounts":"http://localhost:8080/v1/projects/1a7/mounts","networks":"http://localhost:8080/v1/projects/1a7/networks","physicalHosts":"http://localhost:8080/v1/projects/1a7/physicalhosts","ports":"http://localhost:8080/v1/projects/1a7/ports","projectMembers":"http://localhost:8080/v1/projects/1a7/projectmembers","serviceConsumeMaps":"http://localhost:8080/v1/projects/1a7/serviceconsumemaps","serviceEvents":"http://localhost:8080/v1/projects/1a7/serviceevents","serviceExposeMaps":"http://localhost:8080/v1/projects/1a7/serviceexposemaps","services":"http://localhost:8080/v1/projects/1a7/services","snapshots":"http://localhost:8080/v1/projects/1a7/snapshots","storagePools":"http://localhost:8080/v1/projects/1a7/storagepools","userPreferences":"http://localhost:8080/v1/projects/1a7/userpreferences","volumes":"http://localhost:8080/v1/projects/1a7/volumes","accounts":"http://localhost:8080/v1/projects/1a7/accounts","addOutputsInputs":"http://localhost:8080/v1/projects/1a7/addoutputsinputs","amazonec2Configs":"http://localhost:8080/v1/projects/1a7/amazonec2configs","apiKeys":"http://localhost:8080/v1/projects/1a7/apikeys","azureConfigs":"http://localhost:8080/v1/projects/1a7/azureconfigs","azureadconfigs":"http://localhost:8080/v1/projects/1a7/azureadconfigs","composeProjects":"http://localhost:8080/v1/projects/1a7/composeprojects","composeServices":"http://localhost:8080/v1/projects/1a7/composeservices","configItems":"http://localhost:8080/v1/projects/1a7/configitems","containerExecs":"http://localhost:8080/v1/projects/1a7/containerexecs","containers":"http://localhost:8080/v1/projects/1a7/containers","databasechangeloglocks":"http://localhost:8080/v1/projects/1a7/databasechangeloglocks","databasechangelogs":"http://localhost:8080/v1/projects/1a7/databasechangelogs","digitaloceanConfigs":"http://localhost:8080/v1/projects/1a7/digitaloceanconfigs","dnsServices":"http://localhost:8080/v1/projects/1a7/dnsservices","dockerBuilds":"http://localhost:8080/v1/projects/1a7/dockerbuilds","environmentUpgrades":"http://localhost:8080/v1/projects/1a7/environmentupgrades","extensionPoints":"http://localhost:8080/v1/projects/1a7/extensionpoints","externalDnsEvents":"http://localhost:8080/v1/projects/1a7/externaldnsevents","externalHandlerExternalHandlerProcessMaps":"http://localhost:8080/v1/projects/1a7/externalhandlerexternalhandlerprocessmaps","externalHandlerProcesses":"http://localhost:8080/v1/projects/1a7/externalhandlerprocesses","externalHandlers":"http://localhost:8080/v1/projects/1a7/externalhandlers","externalHostEvents":"http://localhost:8080/v1/projects/1a7/externalhostevents","externalServiceEvents":"http://localhost:8080/v1/projects/1a7/externalserviceevents","externalServices":"http://localhost:8080/v1/projects/1a7/externalservices","externalStoragePoolEvents":"http://localhost:8080/v1/projects/1a7/externalstoragepoolevents","externalVolumeEvents":"http://localhost:8080/v1/projects/1a7/externalvolumeevents","githubconfigs":"http://localhost:8080/v1/projects/1a7/githubconfigs","haConfigInputs":"http://localhost:8080/v1/projects/1a7/haconfiginputs","haConfigs":"http://localhost:8080/v1/projects/1a7/haconfigs","hostAccesses":"http://localhost:8080/v1/projects/1a7/hostaccesses","hostApiProxyTokens":"http://localhost:8080/v1/projects/1a7/hostapiproxytokens","identities":"http://localhost:8080/v1/projects/1a7/identities","kubernetesServices":"http://localhost:8080/v1/projects/1a7/kubernetesservices","ldapconfigs":"http://localhost:8080/v1/projects/1a7/ldapconfigs","loadBalancerConfigs":"http://localhost:8080/v1/projects/1a7/loadbalancerconfigs","loadBalancerServices":"http://localhost:8080/v1/projects/1a7/loadbalancerservices","localAuthConfigs":"http://localhost:8080/v1/projects/1a7/localauthconfigs","machineDrivers":"http://localhost:8080/v1/projects/1a7/machinedrivers","machines":"http://localhost:8080/v1/projects/1a7/machines","openldapconfigs":"http://localhost:8080/v1/projects/1a7/openldapconfigs","packetConfigs":"http://localhost:8080/v1/projects/1a7/packetconfigs","passwords":"http://localhost:8080/v1/projects/1a7/passwords","processDefinitions":"http://localhost:8080/v1/projects/1a7/processdefinitions","processExecutions":"http://localhost:8080/v1/projects/1a7/processexecutions","processInstances":"http://localhost:8080/v1/projects/1a7/processinstances","projects":"http://localhost:8080/v1/projects/1a7/projects","pullTasks":"http://localhost:8080/v1/projects/1a7/pulltasks","register":"http://localhost:8080/v1/projects/1a7/register","registrationTokens":"http://localhost:8080/v1/projects/1a7/registrationtokens","registries":"http://localhost:8080/v1/projects/1a7/registries","registryCredentials":"http://localhost:8080/v1/projects/1a7/registrycredentials","resourceDefinitions":"http://localhost:8080/v1/projects/1a7/resourcedefinitions","scalePolicys":"http://localhost:8080/v1/projects/1a7/scalepolicys","schemas":"http://localhost:8080/v1/projects/1a7/schemas","serviceProxies":"http://localhost:8080/v1/projects/1a7/serviceproxies","settings":"http://localhost:8080/v1/projects/1a7/settings","snapshotBackupInputs":"http://localhost:8080/v1/projects/1a7/snapshotbackupinputs","statsAccesses":"http://localhost:8080/v1/projects/1a7/statsaccesses","taskInstances":"http://localhost:8080/v1/projects/1a7/taskinstances","tasks":"http://localhost:8080/v1/projects/1a7/tasks","typeDocumentations":"http://localhost:8080/v1/projects/1a7/typedocumentations","virtualMachines":"http://localhost:8080/v1/projects/1a7/virtualmachines","hostStats":"http://localhost:8080/v1/projects/1a7/projects/1a7/hoststats"},"actions":{},"name":"api-test","state":"removed","allowSystemRole":false,"created":"2016-08-23T12:45:09Z","createdTS":1471956309000,"data":{"fields":{"publicDns":false,"mesos":false,"virtualMachine":false,"allowSystemRole":false,"kubernetes":false,"swarm":false,"defaultNetworkId":10,"servicesPortRange":{"startPort":49153,"endPort":65535}}},"description":null,"kind":"project","kubernetes":false,"members":null,"mesos":false,"publicDns":false,"removeTime":"2016-08-23T12:46:26Z","removeTimeTS":1471956386000,"removed":"2016-08-23T12:45:26Z","removedTS":1471956326000,"servicesPortRange":{"endPort":65535,"startPort":49153},"swarm":false,"transitioning":"no","transitioningMessage":null,"transitioningProgress":null,"uuid":"06f337aa-079b-49de-a811-1477e9f97ac4","virtualMachine":false}],"sortLinks":{},"pagination":null,"sort":null,"filters":{},"createproductions":{}}'
+    http_version:
+  recorded_at: Tue, 23 Aug 2016 12:45:27 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,8 @@
+bin
+coverage
+keys
+spec
+tmp
+Guardfile
+.*
+shia/compose

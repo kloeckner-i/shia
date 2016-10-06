@@ -1,0 +1,7 @@
+test:
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.start_once: 'true'
+  tty: true
+  image: ${IMAGE_NAME}
+  stdin_open: true

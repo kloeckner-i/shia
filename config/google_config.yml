@@ -1,0 +1,11 @@
+---
+address: ''
+diskSize: '30'
+diskType: 'pd-ssd'
+machineImage: 'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1604-xenial-v20160930'
+machineType: 'custom-1-6656'
+project: 'TODO: your gce project here'
+scopes: 'https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write'
+useInternalIp: true,
+username: 'docker-user'
+zone: 'europe-west1-d'
