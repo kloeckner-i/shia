@@ -27,8 +27,8 @@ docker:
   stage: publish
   image: docker:latest
   script:
-    - docker build -t registry.kci.rocks/deployment/shia:latest .
-    - docker run registry.kci.rocks/deployment/shia:latest
-    - docker push registry.kci.rocks/deployment/shia:latest
+    - docker build -t registry.example.com/deployment/shia:latest .
+    - docker run registry.example.com/deployment/shia:latest
+    - docker push registry.example.com/deployment/shia:latest
   only:
     - master
